@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eSalesOne Overview</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!--  Animate On Scroll CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f94b7d;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background: white;
+      color: #1e3c72;
+      padding: 40px 20px;
+      text-align: center;
+      animation: slideFadeIn 1s ease-out;
+    }
+
+    @keyframes slideFadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #1e3c72;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff; 
+      color: #f94b7d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Presentazione: eSalesOne & Integrazione AWS Q</h1>
+  </header>
+
+  <section class="container">
+    <div class="card" data-aos="fade-up">
+      <h2>Descrizione Azienda</h2>
+      <p>Per quanto riguarda la descrizione dell'azienda e il sito web, eSalesOne è un'organizzazione che crea e gestisce esperienze di vendita innovative per prodotti digitali e fisici. La sua attività principale è la realizzazione di funnel, landing page e quiz interattivi altamente personalizzati per aumentare le conversioni degli utenti. Attraverso percorsi coinvolgenti e strategici, eSalesOne guida i clienti verso l'acquisto integrando creatività, dati e tecnologia per migliorare le performance dell'e-commerce.</p>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <h2>AWS Developer Q - Dettagli e Implementazione</h2>
+      <p>Un servizio di intelligenza artificiale generativa per sviluppatori integrato con AWS è AWS Developer Q. Opera tramite un'interfaccia conversazionale che utilizza Large Language Model personalizzati per il contesto tecnico. Fornisce inoltre generazione di codice in tempo reale, correzioni, architetture e best practice, oltre all'accesso alla documentazione AWS.</p>
+      <p>Il ciclo di sviluppo, test e debug per la creazione e la personalizzazione di landing page, funnel e prodotti digitali può essere notevolmente accelerato grazie all'integrazione di AWS Q nel flusso di lavoro interno di eSalesOne. In particolare, AWS Q può essere integrato in ambienti EC2 come assistente backend o assistente per sviluppatori tramite API REST per flussi altamente dinamici, come quelli basati sui dati dei quiz o sulle pagine di prodotto integrate.</p>
+      <p>Sulla base della mia esperienza nello sviluppo di applicazioni 3D utilizzando fotogrammetria, AI per il meshing, Lidar e tecnologie QR, ho utilizzato Firebase per autenticazione e storage, S3 per la gestione di asset 3D, ed EC2 per l'elaborazione lato server. In questi scenari, AWS Q risulta utile per semplificare le integrazioni API AR/VR, standardizzare operazioni come il texture mapping e l'automazione con S3, e migliorare la documentazione tecnica.</p>
+      <p>In modo analogo, eSalesOne può sfruttare AWS Q per automatizzare la generazione di schede prodotto (HTML/codice), creare assistenti intelligenti per il supporto clienti e documentare più efficacemente le funzionalità basate su API.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 eSalesOne – Presentazione Tecnica</p>
+  </footer>
+
+  <!-- Animate On Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
